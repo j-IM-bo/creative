@@ -1,0 +1,81 @@
+/*------------------------------------*\
+    Font sizes
+\*------------------------------------*/
+
+//extra large
+@mixin f-xl() {
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: 800;
+
+    @include bp(small) {
+        font-size: 5.6rem;
+        line-height: 5.6rem;
+    }
+
+    @include bp(medium) {
+        font-size: 8rem;
+        line-height: 8.8rem;
+    }
+}
+
+//large
+@mixin f-lg() {
+    font-size: 3.2rem;
+    line-height: 4rem;
+    font-weight: 800;
+
+    @include bp(medium) {
+        font-size: 5.6rem;
+        line-height: 6.4rem;
+    }
+}
+
+//medium
+@mixin f-md() {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 800;
+
+    @include bp(medium) {
+        font-size: 2rem;
+        line-height: 3.2rem;
+    }
+}
+
+//small
+// @mixin f-sm() {
+//     font-size: 1.2rem;
+//     line-height: 1.7rem;
+
+//     @include bp(medium) {
+//         font-size: 1.4rem;
+//         line-height: 1.9rem;
+//     }
+// }
+
+//extra small
+// @mixin f-xs() {
+//     font-size: 1.2rem;
+//     line-height: 2rem;
+// }
+
+//body copy
+@mixin f-reg() {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+
+    @include bp(medium) {
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+    }
+}
+
+//override
+@mixin font-size($s: 1.8rem, $lh: 2.4rem, $ls: 0, $fw: normal) {
+    font-size: $s;
+    line-height: $lh;
+    letter-spacing: $ls;
+    font-weight: $fw;
+}
