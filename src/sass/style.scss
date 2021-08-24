@@ -35,12 +35,13 @@
 @import "generic/button-reset";
 @import "generic/box-sizing";
 @import "generic/pseudo";
+@import "generic/fonts";
 
 /*------------------------------------*\
     Plugins
     - plugin default styles
 \*------------------------------------*/
-@import "plugins/flickity";
+// @import "plugins/flickity";
 
 /*------------------------------------*\
     Elements
@@ -85,3 +86,5 @@
 \*------------------------------------*/
 
 @import "components/header";
+@import "components/menu";
+@import "components/hero";

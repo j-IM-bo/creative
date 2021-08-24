@@ -15,42 +15,101 @@
         <!-- Favicon -->
     </head>
 
-    <body class="js-body">
+    <body id="js-body">
         <header class="header">
+            <!-- Desktop/tablet -->
+            <div class="header__nav-bg"></div>
+
             <div class="header__inner">
                 <div class="header__site-link">
                     <img src="./images/desktop/logo.svg" alt="logo" />
                     <div class="visually-hidden">logo</div>
                 </div>
 
-                <div class="header__nav-container">
-                    <nav class="header__nav">
-                        <ul class="header__nav-list">
-                            <li class="header__nav-list-item">
-                                <a href="#" class="header__nav-link">About</a>
-                            </li>
-                            <li class="header__nav-list-item">
-                                <a href="#" class="header__nav-link">Service</a>
-                            </li>
-                            <li class="header__nav-list-item">
-                                <a href="#" class="header__nav-link"
-                                    >Projects</a
-                                >
-                            </li>
-                            <li class="header__nav-list-item">
-                                <a href="#" class="header__nav-link">
-                                    <button class="btn2">
-                                        Schedule a Call
-                                    </button>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-list-item">
+                            <a href="#" class="header__nav-link">About</a>
+                        </li>
+                        <li class="header__nav-list-item">
+                            <a href="#" class="header__nav-link">Service</a>
+                        </li>
+                        <li class="header__nav-list-item">
+                            <a href="#" class="header__nav-link">Projects</a>
+                        </li>
+                        <li class="header__nav-list-item">
+                            <a href="#" class="header__nav-link">
+                                <button class="btn2">Schedule a Call</button>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
+            <!-- /end .Desktop/tablet -->
+
+            <!-- Mobile -->
+            <button id="js-menu-button" class="menu-button">
+                <div class="x"></div>
+                <div class="y"></div>
+                <div class="z"></div>
+            </button>
+
+            <div id="js-menu" class="menu">
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">About</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">Service</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">Projects</a>
+                    </li>
+
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">
+                            <button class="btn1">Schedule a Call</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /end .mobile -->
         </header>
 
-        <main></main>
+        <main id="main">
+            <section class="hero">
+                <div class="hero__image">
+                    <img
+                        class="hero__image-mobile"
+                        src="./images/mobile/image-hero.jpg"
+                        alt="two people working on computers"
+                    />
+                    <img
+                        class="hero__image-tablet"
+                        src="./images/tablet/image-hero.jpg"
+                        alt="two people working on computers"
+                    />
+                    <img
+                        class="hero__image-desktop"
+                        src="./images/desktop/image-hero.jpg"
+                        alt="two people working on computers"
+                    />
+                </div>
+
+                <div class="hero__content">
+                    <h1>Branding & website design agency</h1>
+
+                    <p>
+                        We specialize in visual storytelling by creating
+                        cohesive brand and website design solutions for small
+                        businesses, giving lasting impressions to audiences in a
+                        digital world.
+                    </p>
+
+                    <button class="btn1">Learn More</button>
+                </div>
+            </section>
+        </main>
 
         <!-- footer -->
         <footer class="footer"></footer>

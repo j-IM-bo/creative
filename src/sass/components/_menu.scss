@@ -1,0 +1,43 @@
+/*------------------------------------*\
+    Menu
+\*------------------------------------*/
+
+.menu {
+    @include flex-center();
+    background-color: var(--c-bg-black);
+    width: 25.2rem;
+    position: absolute;
+    right: 2.4rem;
+    opacity: 0;
+    visibility: hidden;
+    @include z-index(level9);
+
+    &.menu-is-active {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.3s ease-in-out;
+    }
+}
+
+.menu__list {
+    padding-bottom: 3rem;
+}
+
+.menu__list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.menu__list-link {
+    color: var(--c-font-white);
+    font-size: 1.8rem;
+    margin-top: 4rem;
+    transform: translateY(101%);
+
+    .menu-is-active & {
+        transform: translateY(0);
+        transition: transform 0.8s ease-in-out;
+    }
+}

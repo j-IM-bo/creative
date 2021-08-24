@@ -4,8 +4,8 @@
 
 body {
     @include f-reg();
-    background-color: var(--c-bg-light-1);
-    color: var(--c-font-dark);
+    background-color: var(--c-bg-white);
+    color: var(--c-font-black);
 
     &.stop-scrolling {
         position: absolute;

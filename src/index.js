@@ -8,9 +8,12 @@ import "./sass/style.scss";
 // import Flickity from "flickity";
 // import { debounce } from "./js/utilities/debounce";
 import { viewportSize } from "./js/utilities/viewportSize";
+import { initMenu } from "./js/menu";
 
 function init() {
     viewportSize();
+
+    initMenu();
 }
 
 window.addEventListener("load", function () {

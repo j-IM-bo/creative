@@ -6,8 +6,17 @@ $breakpoints: (
     small: (
         60em * 0.625
     ),
+    small-down: (
+        73em * 0.625
+    ),
+    small-up: (
+        75em * 0.625
+    ),
     medium: (
         90em * 0.625
+    ),
+    medium-up: (
+        105em * 0.625
     ),
     large: (
         120em * 0.625

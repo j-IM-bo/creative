@@ -1,0 +1,60 @@
+/*------------------------------------*\
+    Hero section
+\*------------------------------------*/
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero__image {
+    @include bp(small) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+}
+
+.hero__image-mobile {
+    display: block;
+
+    @include bp(small) {
+        display: none;
+    }
+}
+.hero__image-tablet {
+    display: none;
+
+    @include bp(small) {
+        display: block;
+    }
+    @include bp(medium) {
+        display: none;
+    }
+}
+.hero__image-desktop {
+    display: none;
+
+    @include bp(medium) {
+        display: block;
+    }
+}
+
+.hero__content {
+    position: relative;
+    padding: 6.3rem 2.4rem 9.6rem;
+
+    p {
+        margin-bottom: 4rem;
+    }
+
+    @include bp(small) {
+        padding: 8.8rem 4rem 15rem;
+        max-width: 48rem;
+    }
+    @include bp(medium) {
+        padding: 13.1rem 16.5rem 16.2rem;
+        max-width: 90rem;
+    }
+}
