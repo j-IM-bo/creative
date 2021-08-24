@@ -1,0 +1,94 @@
+/*------------------------------------*\
+    Strategy section
+\*------------------------------------*/
+
+.strategy {
+    position: relative;
+    width: 100%;
+    background-color: var(--c-bg-black);
+    color: var(--c-font-white);
+
+    @include bp(small) {
+        display: flex;
+    }
+}
+
+.strategy__image {
+    position: relative;
+    height: 100%;
+
+    @include bp(small) {
+        width: 50%;
+    }
+}
+.strategy__image-mobile {
+    display: block;
+
+    @include bp(small) {
+        display: none;
+    }
+}
+.strategy__image-tablet {
+    display: none;
+
+    @include bp(small) {
+        display: block;
+        width: 37.8rem;
+    }
+    @include bp(medium) {
+        display: none;
+    }
+}
+.strategy__image-desktop {
+    display: none;
+
+    @include bp(medium) {
+        display: block;
+        height: 100%;
+    }
+}
+
+.strategy__content {
+    position: relative;
+    padding: 8rem 2.4rem 7rem;
+
+    @include bp(small) {
+        padding: 13rem 2.4rem 0 7rem;
+    }
+    @include bp(medium) {
+        width: 50%;
+        padding: 21.5rem 11.6rem 10rem 15.4rem;
+    }
+}
+
+.strategy__inner {
+    position: relative;
+
+    h2 {
+        span {
+            color: var(--c-font-red);
+        }
+    }
+
+    @include bp(small) {
+    }
+}
+
+.icon-red {
+    position: absolute;
+    left: 2.4rem;
+    top: -1.5rem;
+    width: 6.4rem;
+    height: 3rem;
+
+    @include bp(small) {
+        left: -3.5rem;
+        top: 14.5rem;
+    }
+    @include bp(medium) {
+        width: 13.5rem;
+        height: 6.1rem;
+        left: -8rem;
+        top: 24rem;
+    }
+}
