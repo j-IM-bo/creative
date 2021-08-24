@@ -1,0 +1,57 @@
+/*------------------------------------*\
+    Header
+\*------------------------------------*/
+
+.header {
+    position: relative;
+    width: 100%;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include bp(small) {
+    }
+}
+
+.header__site-link {
+    width: 16.1rem;
+    height: auto;
+}
+
+.header__nav-container {
+    display: none;
+
+    @include bp(small) {
+        display: block;
+        background-color: var(--c-bg-red);
+        height: 17.8rem;
+        width: 43.8rem;
+        display: flex;
+        align-items: center;
+        transition: var(--transition);
+    }
+
+    @include bp(medium) {
+        width: 70.5rem;
+    }
+}
+
+.header__nav {
+    width: 100%;
+}
+
+.header__nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header__nav-list-item {
+}
+
+.header__nav-link {
+    color: var(--c-font-white);
+}

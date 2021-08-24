@@ -44,15 +44,10 @@
 }
 
 //small
-// @mixin f-sm() {
-//     font-size: 1.2rem;
-//     line-height: 1.7rem;
-
-//     @include bp(medium) {
-//         font-size: 1.4rem;
-//         line-height: 1.9rem;
-//     }
-// }
+@mixin f-sm() {
+    font-size: 1.8rem;
+    font-weight: 800;
+}
 
 //extra small
 // @mixin f-xs() {
