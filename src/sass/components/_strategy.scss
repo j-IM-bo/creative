@@ -18,7 +18,7 @@
     height: 100%;
 
     @include bp(small) {
-        width: 50%;
+        flex: 1;
     }
 }
 .strategy__image-mobile {
@@ -33,7 +33,7 @@
 
     @include bp(small) {
         display: block;
-        width: 37.8rem;
+        min-width: 37.8rem;
     }
     @include bp(medium) {
         display: none;
@@ -44,20 +44,19 @@
 
     @include bp(medium) {
         display: block;
-        height: 100%;
     }
 }
 
 .strategy__content {
     position: relative;
-    padding: 8rem 2.4rem 7rem;
+    padding: 8rem 2.4rem;
 
     @include bp(small) {
-        padding: 13rem 2.4rem 0 7rem;
+        padding: 13rem 2.4vw 0 8vw;
+        flex: 1;
     }
     @include bp(medium) {
-        width: 50%;
-        padding: 21.5rem 11.6rem 10rem 15.4rem;
+        padding: 10vw 5vw 1vw 10vw;
     }
 }
 
@@ -71,6 +70,14 @@
     }
 
     @include bp(small) {
+        max-width: 32vw;
+    }
+    @include bp(medium) {
+        max-width: 80vw;
+    }
+
+    @include bp(large) {
+        max-width: 25vw;
     }
 }
 

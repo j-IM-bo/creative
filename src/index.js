@@ -9,11 +9,13 @@ import "./sass/style.scss";
 // import { debounce } from "./js/utilities/debounce";
 import { viewportSize } from "./js/utilities/viewportSize";
 import { initMenu } from "./js/menu";
+import { initCarousel } from "./js/carousel";
 
 function init() {
     viewportSize();
 
     initMenu();
+    initCarousel();
 }
 
 window.addEventListener("load", function () {

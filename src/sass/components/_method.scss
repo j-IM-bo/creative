@@ -1,0 +1,71 @@
+/*------------------------------------*\
+    Method section
+\*------------------------------------*/
+
+.method {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+
+    h2 {
+        position: absolute;
+        left: 2.4rem;
+        top: 10rem;
+        color: var(--c-font-white);
+        max-width: 27rem;
+        z-index: 1;
+
+        @include bp(small) {
+            color: var(--c-font-black);
+        }
+        @include bp(medium) {
+            max-width: 48rem;
+            left: 10vw;
+        }
+    }
+}
+
+.method__content {
+    position: relative;
+    right: 0;
+    padding: 31.7rem 2.4rem 0.2rem;
+    background-color: var(--c-bg-red);
+    color: var(--c-font-white);
+
+    @include bp(small) {
+        max-width: 55vw;
+        position: relative;
+        top: -12vw;
+        margin-left: 45vw;
+        padding: 17vw 4rem 0.2rem 6rem;
+    }
+    @include bp(medium) {
+        max-width: 65vw;
+        position: relative;
+        top: -5vw;
+        margin-left: 35vw;
+        right: 0;
+        padding: 10vw 10vw 5vw 24vw;
+    }
+}
+
+.method__list {
+    margin-left: 1rem;
+    position: relative;
+}
+
+.method__list-item {
+    position: relative;
+    margin-bottom: 9rem;
+
+    span {
+        font-weight: 800;
+        font-size: 8rem;
+        color: #d8d8d8;
+        opacity: 0.25;
+        position: absolute;
+        left: -1.4rem;
+        top: -1.4rem;
+    }
+}
