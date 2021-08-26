@@ -18,6 +18,7 @@
 
         @include bp(small) {
             color: var(--c-font-black);
+            left: 4rem;
         }
         @include bp(medium) {
             max-width: 48rem;

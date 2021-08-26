@@ -7,15 +7,15 @@ import "./sass/style.scss";
 // gsap.registerPlugin(ScrollTrigger);
 // import Flickity from "flickity";
 // import { debounce } from "./js/utilities/debounce";
-import { viewportSize } from "./js/utilities/viewportSize";
+// import { viewportSize } from "./js/utilities/viewportSize";
 import { initMenu } from "./js/menu";
 import { initCarousel } from "./js/carousel";
+import { initLoadIn } from "./js/load-in";
 
 function init() {
-    viewportSize();
-
     initMenu();
     initCarousel();
+    initLoadIn();
 }
 
 window.addEventListener("load", function () {

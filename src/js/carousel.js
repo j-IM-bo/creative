@@ -31,7 +31,6 @@ export function initCarousel() {
     // next button
     nextButton.addEventListener("click", (e) => {
         e.preventDefault;
-        const slideTitle = document.querySelectorAll(".carousel__title");
 
         const currentSlide = track.querySelector(".current-slide"),
             nextSlide = currentSlide.nextElementSibling;

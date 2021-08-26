@@ -50,6 +50,12 @@
     @include bp(small) {
         display: block;
         width: 6.2rem;
+        position: absolute;
+        right: -3.1rem;
+    }
+    @include bp(medium) {
+        width: 13.4rem;
+        right: -6.7rem;
     }
 }
 

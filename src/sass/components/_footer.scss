@@ -1,0 +1,41 @@
+/*------------------------------------*\
+    Footer
+\*------------------------------------*/
+
+.footer {
+    position: relative;
+}
+
+.icon-red {
+    display: none;
+
+    @include bp(medium) {
+        display: block;
+        top: 40%;
+        left: -6rem;
+    }
+}
+
+.footer__inner {
+    padding: 10rem 2.4rem;
+    width: 100%;
+
+    @include bp(small) {
+        padding: 0 4rem 10rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2 {
+            max-width: 31.6rem;
+        }
+    }
+    @include bp(medium) {
+        padding: 10rem 16.5rem;
+        flex-wrap: wrap;
+
+        h2 {
+            max-width: 56rem;
+        }
+    }
+}

@@ -40,6 +40,7 @@
         width: 52rem;
         z-index: -1;
         transition: var(--transition);
+        transform: translateY(-100%);
     }
 
     @include bp(medium) {
@@ -64,6 +65,7 @@
 
 .header__nav-list-item {
     margin: 0 1.1rem;
+    opacity: 0;
 
     @include bp(medium) {
         margin: 0 1.6rem;
